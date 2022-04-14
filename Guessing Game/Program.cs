@@ -17,9 +17,13 @@ namespace Guessing_Game
             {
                 if(guessCount < guessLimit)
                 {
-                    Console.Write("Enter guess: ");
-                    guessWord = Console.ReadLine();
-                    guessCount++;
+                    for(int i = 1; i <= guessLimit; i++)
+                    {
+                        Console.Write("Enter guess "+i+": ");
+                        guessWord = Console.ReadLine();
+                        guessCount++;
+                    }
+                   
                 } else
                 {
                     outOfGuesses = true;
